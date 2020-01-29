@@ -1,0 +1,12 @@
+inData =[[1,2,[3]],4]
+result = [] 
+
+def flatten(inData): 
+	for i in inData: 
+		if type(i) == list: 
+			flatten(i) 
+		else: 
+			result.append(i) 
+
+flatten(inData) 
+print  result
